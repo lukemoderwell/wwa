@@ -1,0 +1,6 @@
+---
+layout: default
+title: Weddings With Anna
+---
+
+This is just a test.
