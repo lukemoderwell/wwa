@@ -7,3 +7,10 @@ github_username:  lukemoderwell
 
 # Build settings
 markdown: kramdown
+permalink: pretty
+
+sass:
+  sass_dir: static/scss
+  style: compact
+
+exclude: [package.json, yarn.lock, Gemfile, Gemfile.lock, node_modules, static]
