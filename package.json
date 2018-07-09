@@ -9,8 +9,7 @@
     "parcel-bundler": "^1.9.4"
   },
   "scripts": {
-    "watch": "parcel watch ./static/js/index.js --out-dir _site/static/js/",
-    "scss": "parcel watch ./static/scss/main.scss --out-dir _site/static/css/"
+    "watch": "parcel watch ./assets/js/index.js --out-dir _site/assets/js/"
   },
   "devDependencies": {
     "node-sass": "^4.9.2"
