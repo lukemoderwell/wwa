@@ -1,0 +1,38 @@
+.app-header {
+  height: 4rem;
+
+  .header {
+    position: relative;
+    z-index: 200;
+  }
+
+  .header-logo {
+    position: fixed;
+    padding-left: $unit-4;
+    padding-top: $unit-4;
+    padding-bottom: $unit-4;
+  }
+
+  .header-links {
+    padding-top: $unit-4;
+
+    @media (min-width: $screen-lg) {
+      padding-left: 13.5rem;
+      padding-right: 13.5rem;
+    }
+  }
+
+  .header-social {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    padding-left: $unit-4;
+    padding-top: $unit-4;
+    padding-bottom: $unit-4;
+
+    & > img {
+      display: block;
+    }
+  }
+}
