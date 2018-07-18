@@ -1,0 +1,55 @@
+html {
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: 'morion';
+  src: url('../fonts/morion-regular-webfont.eot');
+  src: url('../fonts/morion-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/morion-regular-webfont.woff2') format('woff2'),
+       url('../fonts/morion-regular-webfont.woff') format('woff'),
+       url('../fonts/morion-regular-webfont.ttf') format('truetype'),
+       url('../fonts/morion-regular-webfont.svg#morionregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// FONT FAMILY
+.font-serif {
+  font-family: 'morion', Georgia, serif;
+}
+
+// FONT SCALE
+// designed using the Golden Ratio
+// https://type-scale.com/
+h1, .f1 {
+  font-size: 6.854rem; // 109.664px
+}
+
+h2, .f2 {
+  font-size: 4.236rem; // 67.776px
+}
+
+h3, .f3 {
+  font-size: 2.618rem; // 41.888px
+}
+
+h4, .f4 {
+  font-size: 1.618rem; // 25.888px
+}
+
+h5, .f5 {
+  font-size: 1.1875rem; // 19px
+}
+
+.f6 {
+ font-size: 1rem;
+}
+
+.f7 {
+  font-size: .618rem; // 10px
+}
+
+p {
+  line-height: 1.618;
+}

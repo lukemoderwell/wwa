@@ -1,14 +1,22 @@
 // breakpoints
-$screen-xs: 300px;
-$screen-sm: 480px;
-$screen-md: 767px;
-$screen-lg: 992px;
-$screen-xl: 1140px;
+$xs: 300px;
+$sm: 480px;
+$md: 767px;
+$lg: 992px;
+$xl: 1140px;
 
 // spacers
-$unit: 8px;
+$unit: .5rem;
 $unit-2: $unit * 2;
 $unit-3: $unit * 3;
 $unit-4: $unit * 4;
 $unit-5: $unit * 5;
 $unit-6: $unit * 6;
+$unit-7: $unit * 7;
+$unit-8: $unit * 8;
+$unit-9: $unit * 9;
+$unit-10: $unit * 10;
+
+// colors
+$salmon: #F19AA2;
+$white: whitesmoke;

@@ -1,23 +1,26 @@
 .btn {
   position: relative;
-  padding: 1rem 1.5rem;
-  background: pink;
+  padding: 1.25rem 3.75rem;
+  background: $salmon;
+  color: rgba(0,0,0,.75);
+  font-weight: 600;
+  text-decoration: none;
   text-transform: uppercase;
 }
 
 .btn::after {
   content: '';
   position: absolute;
-  top: .25rem;
-  left: .25rem;
+  top: .375rem;
+  left: .375rem;
   width: 100%;
-  height: 51px;
+  height: 3.75rem;
   border: 1px solid black;
-  transition: .3s all ease;
+  transition: .25s all ease-in-out;
 }
 
 .btn:hover {
-  background: salmon;
+  background: darken($salmon, 10);
   &::after {
     top: 0;
     left: 0;
