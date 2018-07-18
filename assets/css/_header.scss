@@ -8,6 +8,8 @@
 
   .header-logo {
     position: fixed;
+    display: block;
+    width: 3rem;
     padding-left: $unit-4;
     padding-top: $unit-4;
     padding-bottom: $unit-4;
@@ -31,8 +33,11 @@
     padding-top: $unit-4;
     padding-bottom: $unit-4;
 
-    & > img {
+    .social-item {
       display: block;
+      margin-bottom: 1rem;
+      width: 1.5rem;
+      height: 1.5rem;
     }
   }
 }
