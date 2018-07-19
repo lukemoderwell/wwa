@@ -13,14 +13,49 @@
     padding-left: $unit-4;
     padding-top: $unit-4;
     padding-bottom: $unit-4;
+
+    a {
+      color: $black;
+      text-decoration: none;
+    }
   }
 
-  .header-links {
-    padding-top: $unit-4;
-
+  .header-nav {
     @media (min-width: $lg) {
-      padding-left: 13.5rem;
-      padding-right: 13.5rem;
+      text-align: right;
+      position: fixed;
+      top: 2rem;
+      bottom: 2rem;
+      right: 2rem;
+    }
+
+    .nav {
+      display: flex;
+      @media (min-width: $md) {
+        flex-direction: column;
+      }
+
+      a {
+        margin-bottom: .5rem;
+        color: $black;
+        text-decoration: none;
+
+        &::before {
+          position: relative;
+          content: '';
+          margin-right: .5rem;
+          border: 1px solid $tomato;
+          opacity: 0;
+          transition: .35s all ease-in-out;
+        }
+      }
+
+      a:hover {
+        color: $gray;
+        &::before {
+          opacity: 1;
+        }
+      }
     }
   }
 
