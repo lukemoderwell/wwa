@@ -6,17 +6,17 @@
   font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
-}
 
-.btn::after {
-  content: '';
-  position: absolute;
-  top: .375rem;
-  left: .375rem;
-  width: 100%;
-  height: 3.75rem;
-  border: 1px solid black;
-  transition: .25s all ease-in-out;
+  &::after {
+    content: '';
+    position: absolute;
+    top: .375rem;
+    left: .375rem;
+    width: 100%;
+    height: 3.75rem;
+    border: 1px solid black;
+    transition: .25s all ease-in-out;
+  }
 }
 
 .btn:hover {
