@@ -14,3 +14,9 @@ sass:
   style: compact
 
 exclude: [package.json, yarn.lock, Gemfile, Gemfile.lock, node_modules]
+
+collections:
+  audio:
+    output: false
+
+collections_dir: collections
