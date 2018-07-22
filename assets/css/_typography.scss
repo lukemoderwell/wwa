@@ -1,18 +1,27 @@
 html {
   font-size: 16px;
 }
-
+/* Morion Regular */
 @font-face {
-  font-family: 'morion';
-  src: url('../fonts/morion-regular-webfont.eot');
-  src: url('../fonts/morion-regular-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/morion-regular-webfont.woff2') format('woff2'),
-       url('../fonts/morion-regular-webfont.woff') format('woff'),
-       url('../fonts/morion-regular-webfont.ttf') format('truetype'),
-       url('../fonts/morion-regular-webfont.svg#morionregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
+	font-family: Morion;
+	src:	url('https://s3.console.aws.amazon.com/s3/object/weddings-with-anna//hinted-Morion-Regular.woff?region=us-east-2&tab=overview') format('woff'),
+        url('https://s3.console.aws.amazon.com/s3/object/weddings-with-anna/hinted-Morion-Regular.eot?region=us-east-2&tab=overview') format('eot');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
 }
+
+/* Morion Bold */
+@font-face {
+	font-family: Morion;
+	src:	url('https://s3.console.aws.amazon.com/s3/object/weddings-with-anna/hinted-Morion-Bold.woff?region=us-east-2&tab=overview') format('woff'),
+        url('https://s3.console.aws.amazon.com/s3/object/weddings-with-anna/hinted-Morion-Bold.eot?region=us-east-2&tab=overview') format('eot');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+
 
 // FONT FAMILY
 .serif {
