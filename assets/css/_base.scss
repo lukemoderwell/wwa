@@ -42,21 +42,3 @@ body {
     height: 100vh;
   }
 }
-
-// dark theme styling
-.theme-dark {
-  h1,
-  h2,
-  h3,
-  h4 {
-    color: $white;
-  }
-
-  p {
-    color: rgba(255, 255, 255, .85);
-  }
-
-  svg {
-    fill: $white;
-  }
-}
