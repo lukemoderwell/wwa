@@ -4,8 +4,8 @@ html {
 /* Morion Regular */
 @font-face {
 	font-family: Morion;
-	src:	url('https://s3.console.aws.amazon.com/s3/object/weddings-with-anna//hinted-Morion-Regular.woff?region=us-east-2&tab=overview') format('woff'),
-        url('https://s3.console.aws.amazon.com/s3/object/weddings-with-anna/hinted-Morion-Regular.eot?region=us-east-2&tab=overview') format('eot');
+	src:	url('../fonts/hinted-Morion-Regular.woff?region=us-east-2&tab=overview') format('woff'),
+        url('../fonts/hinted-Morion-Regular.eot?region=us-east-2&tab=overview') format('eot');
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
@@ -14,8 +14,8 @@ html {
 /* Morion Bold */
 @font-face {
 	font-family: Morion;
-	src:	url('https://s3.console.aws.amazon.com/s3/object/weddings-with-anna/hinted-Morion-Bold.woff?region=us-east-2&tab=overview') format('woff'),
-        url('https://s3.console.aws.amazon.com/s3/object/weddings-with-anna/hinted-Morion-Bold.eot?region=us-east-2&tab=overview') format('eot');
+	src:	url('../fonts/hinted-Morion-Bold.woff?region=us-east-2&tab=overview') format('woff'),
+        url('../fonts/weddings-with-anna/hinted-Morion-Bold.eot?region=us-east-2&tab=overview') format('eot');
 	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
@@ -25,7 +25,7 @@ html {
 
 // FONT FAMILY
 .serif {
-  font-family: 'morion', Georgia, serif;
+  font-family: 'Morion', Georgia, serif;
 }
 
 // FONT SCALE
@@ -49,6 +49,7 @@ h4, .f4 {
 
 h5, .f5 {
   font-size: 1.1875rem; // 19px
+  line-height: 1.5rem;
 }
 
 .f6 {
