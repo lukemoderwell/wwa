@@ -15,8 +15,10 @@ sass:
 
 exclude: [package.json, yarn.lock, Gemfile, Gemfile.lock, node_modules]
 
+collections_dir: collections
+
 collections:
   audio:
     output: false
-
-collections_dir: collections
+  faqs:
+    output: false
