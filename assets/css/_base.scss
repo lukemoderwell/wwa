@@ -4,6 +4,7 @@
 
 body {
   font-family: 'karla', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: $black;
   color: $gray;
 }
 
@@ -36,15 +37,47 @@ body {
 .app-content {
   padding-left: 2rem;
   padding-right: 2rem;
+
+  @media (min-width: $md) {
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
   
   @media (min-width: $lg) {
-    padding-left: 13.5rem;
-    padding-right: 13.5rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
   }
 
   section {
     @media (min-width: $lg) {
       height: 100vh;
     }
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.portrait {
+  position: relative;
+  filter: saturate(30%) sepia(50%);
+  transition: 250ms all ease-out;
+
+  &:hover {
+    filter: none;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 1rem;
+    left: 1rem;
+    background-color: $salmon;
+    z-index: -1;
   }
 }
