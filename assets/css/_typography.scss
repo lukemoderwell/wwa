@@ -11,15 +11,15 @@ html {
 	font-display: swap;
 }
 
-/* Morion Bold */
-@font-face {
-	font-family: Morion;
-	src:	url('../fonts/hinted-Morion-Bold.woff?region=us-east-2&tab=overview') format('woff'),
-        url('../fonts/weddings-with-anna/hinted-Morion-Bold.eot?region=us-east-2&tab=overview') format('eot');
-	font-weight: 700;
-	font-style: normal;
-	font-display: swap;
-}
+// /* Morion Bold */
+// @font-face {
+// 	font-family: Morion;
+// 	src:	url('../fonts/hinted-Morion-Bold.woff?region=us-east-2&tab=overview') format('woff'),
+//         url('../fonts/weddings-with-anna/hinted-Morion-Bold.eot?region=us-east-2&tab=overview') format('eot');
+// 	font-weight: 700;
+// 	font-style: normal;
+// 	font-display: swap;
+// }
 
 
 
@@ -31,6 +31,11 @@ html {
 // FONT SCALE
 // designed using the Golden Ratio
 // https://type-scale.com/
+h1, h2, h3, h4, h5 {
+  font-weight: 500;
+}
+
+
 h1, .f1 {
   font-size: 6.854rem; // 109.664px
 }
@@ -43,8 +48,9 @@ h3, .f3 {
   font-size: 2.618rem; // 41.888px
 }
 
-h4, .f4 {
+h4, .f4 {  
   font-size: 1.618rem; // 25.888px
+  line-height: 2rem;
 }
 
 h5, .f5 {
