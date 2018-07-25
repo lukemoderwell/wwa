@@ -37,7 +37,10 @@ h1, h2, h3, h4, h5 {
 
 
 h1, .f1 {
-  font-size: 6.854rem; // 109.664px
+  font-size: 4.236rem;
+  @media (min-width: $lg) {
+    font-size: 6.854rem; // 109.664px 
+  }
 }
 
 h2, .f2 {
