@@ -1,0 +1,19 @@
+---
+layout: default
+title: Frequently Asked Questions | Weddings With Anna
+---
+
+<section class="content-faqs" id="faqs">
+  <h2 class="serif f2">FAQs</h2>
+  <div class="grid">
+    {% for faq in site.faqs %}
+      <div class="grid-item">
+        <h5 class="flush-bottom f4 serif">{{ faq.question }}</h5>
+        <p>{{ faq.answer }}</p>
+        {% if faq.content.size > 0 %}
+          {{ faq.content }}
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</section>
