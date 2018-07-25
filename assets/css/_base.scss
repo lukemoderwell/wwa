@@ -62,14 +62,24 @@ img {
 
 .portrait {
   position: relative;
-  filter: saturate(30%) sepia(50%);
-  transition: 250ms all ease-out;
+  background-color: $salmon;
+  height: 0;
+  padding-bottom: 150%;
 
-  &:hover {
-    filter: none;
+  img {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    filter: saturate(30%) sepia(50%);
+    transition: 250ms all ease-out;
+    &:hover {
+      filter: none;
+    }
   }
 
-  &::after {
+  
+
+  .portrait-after {
     content: '';
     display: block;
     position: absolute;
