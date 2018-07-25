@@ -28,19 +28,17 @@
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
-    {{ content }}
-
+    <div class="app">
+      <div class="app-background" style="background-color: #EDE2D2"></div>
+      <div class="app-background-image" style="opacity: 0;"></div>
+      {% include _header.html %}
+      <div class="app-content">
+        <main class="content">
+          {{ content }}
+        </main>
+      </div>
+    </div>
+    
     <script type="text/javascript" async src="/assets/js/index.js"></script>
-    <script>
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", function(user) {
-          if (!user) {
-            window.netlifyIdentity.on("login", function() {
-              document.location.href = "/admin/";
-            });
-          }
-        });
-      }
-    </script>
   </body>
 </html>
