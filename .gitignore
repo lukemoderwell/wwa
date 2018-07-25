@@ -4,5 +4,4 @@ _site/
 .jekyll-metadata
 node_modules
 .cache
-fonts
 .DS_Store
