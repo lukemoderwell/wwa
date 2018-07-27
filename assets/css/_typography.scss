@@ -1,31 +1,10 @@
 html {
   font-size: 16px;
 }
-/* Morion Regular */
-@font-face {
-	font-family: Morion;
-	src:	url('../fonts/hinted-Morion-Regular.woff?region=us-east-2&tab=overview') format('woff'),
-        url('../fonts/hinted-Morion-Regular.eot?region=us-east-2&tab=overview') format('eot');
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
-}
-
-// /* Morion Bold */
-// @font-face {
-// 	font-family: Morion;
-// 	src:	url('../fonts/hinted-Morion-Bold.woff?region=us-east-2&tab=overview') format('woff'),
-//         url('../fonts/weddings-with-anna/hinted-Morion-Bold.eot?region=us-east-2&tab=overview') format('eot');
-// 	font-weight: 700;
-// 	font-style: normal;
-// 	font-display: swap;
-// }
-
-
 
 // FONT FAMILY
 .serif {
-  font-family: 'Morion', Georgia, serif;
+  font-family: 'LydianBTWXX-Roman', Georgia, serif;
 }
 
 // FONT SCALE
@@ -45,6 +24,7 @@ h1, .f1 {
 
 h2, .f2 {
   font-size: 4.236rem; // 67.776px
+  line-height: 4.5rem;
 }
 
 h3, .f3 {
