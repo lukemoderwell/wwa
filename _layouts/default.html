@@ -21,16 +21,12 @@
     <meta property="og:image" content="{% if page.image %}https:{{ page.image | escape }}{% else %}{{ site.image | escape }}{% endif %}">
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <meta property="og:site_name" content="{{ site.title }}">
-
-    <!-- Link to an external CSS file -->
     <link rel="stylesheet" href="/assets/css/main.css">
-
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
-  <body>
+  <body class="theme-dark">
     <div class="app">
-      <div class="app-background" style="background-color: #EDE2D2"></div>
-      <div class="app-background-image" style="opacity: 0;"></div>
+      <div class="app-background"></div>
+      <div class="app-background-image" style="background-image: url('/images/welcome-bg.jpg'); opacity: 0;"></div>
       {% include _header.html %}
       <div class="app-content">
         <main class="content">
