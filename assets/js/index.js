@@ -13,19 +13,22 @@ class WWA {
   }
 
   handleScroll() {
-    const bg = document.getElementsByClassName('app-background-image')[0];
+    const bg = document.getElementsByClassName('app-background')[0];
+    const bgImg = document.getElementsByClassName('app-background-image')[0];
     console.log(window.scrollY);
     if (window.scrollY > 600) {
-      bg.style.opacity = 0;
+      bgImg.style.opacity = 0;
+      bg.style.background = this.colors.cream;
+      
     } else {
-      bg.style.opacity = `.35`;
+      bgImg.style.opacity = `.5`;
     }
   }
 
   init() {
     this.appBg = document.getElementsByClassName('app-background')[0];
     this.appBgImg = document.getElementsByClassName('app-background-image')[0];
-    this.appBgImg.style.opacity = `.35`;
+    this.appBgImg.style.opacity = `.5`;
     window.addEventListener('scroll', this.handleScroll);
   }
 }

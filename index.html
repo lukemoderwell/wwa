@@ -7,7 +7,12 @@ title: Weddings With Anna
     <div class="grid">
       <div class="grid-item text-center">
         <h1 class="serif f1 flush-bottom"><span class="text-salmon">Music</span> makes memories</h1>
+        <h2 class="f5">
+          Anna crafts a personalized music experience for each couple's wedding that brings people together.
+          With a tasteful repitoire of live and DJ'ed songs, your wedding is sure to have something for everyone.
+        </h2>
         <div class="cta-group">
+          <a href="#listen" class="btn">Listen to samples</a>
           <a href="/booking" class="btn">Book Now</a>
         </div>
       </div>
@@ -24,10 +29,13 @@ title: Weddings With Anna
           <img src="/images/anna-sepia.jpg" />
         </div>
       </div>
-      <div class="grid-item">
-        <h3 class="f2 serif">I want you to absolutely love everything about 
-          your wedding including the <span class="text-salmon">music</span>.</h3>
-        <a class="btn" href="/meet-anna">Read my story</a>
+      <div class="grid-item d-flex align-items-center">
+        <div>
+          <h3 class="f2 serif blockquote">
+            I love working with you throughout the planning process to make sure your wedding is <span class="text-salmon">unique</span> to you!
+          </h3>
+          <a class="btn" href="/meet-anna">Meet Anna</a>
+        </div>
       </div>
     </div>
   </section>
@@ -41,8 +49,9 @@ title: Weddings With Anna
     <h2 class="serif f3">Listen To Samples</h2>
     {% for sample in site.audio %}
     <div class="sample">
+      <img src="https://placehold.it/100x100" />
       <h5>{{ sample.name }}</h5>
-      <audio src="{{ sample.src }}" preload controls />
+      <audio src="{{ sample.src }}" preload />
     </div>
     {% endfor %}
   </section>
