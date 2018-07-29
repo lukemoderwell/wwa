@@ -1,27 +1,32 @@
 class WWA {
   constructor() {
     // Colors
-    this.salmon = `#F19AA2`;
-    this.tomato = `#ED5342`;
-    this.baby = `#A2C8E8`;
-    this.cream = `#EDE2D2`;
+    this.colors = {
+      "salmon": "#F19AA2",
+      "cream": "#EDE2D2",
+      "black": "#1A1A1A"
+    }
 
     // DOM
-    this.appBg = document.getElementsByClassName('app-background')[0];
-    this.appBgImg = document.getElementsByClassName('app-background-image')[0];
+    this.appBg = undefined;
+    this.appBgImg = undefined;
   }
 
   handleScroll() {
+    const bg = document.getElementsByClassName('app-background-image')[0];
     console.log(window.scrollY);
-  }
-
-  handleBgImgTransition() {
-  this.appBgImg.style.backgroundImage = `url('https://images.unsplash.com/photo-1495609000883-209fc68187ef?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b458c2eac6957535ddfb4b18372e941c&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb')`;
-    this.appBgImg.style.opacity = '.25';
+    if (window.scrollY > 600) {
+      bg.style.opacity = 0;
+    } else {
+      bg.style.opacity = `.35`;
+    }
   }
 
   init() {
-    document.addEventListener('scroll', this.handleScroll);
+    this.appBg = document.getElementsByClassName('app-background')[0];
+    this.appBgImg = document.getElementsByClassName('app-background-image')[0];
+    this.appBgImg.style.opacity = `.35`;
+    window.addEventListener('scroll', this.handleScroll);
   }
 }
 
