@@ -9,11 +9,9 @@
 }
 
 .content-welcome .grid {
-  height: 75vh;
-  grid-template-rows: repeat(3, 1fr);
+  height: 100vh;
   .grid-item {
     grid-column: 1 / span 6;
-    grid-row: 2;
 
     @media (min-width: $lg) {
       grid-column: 2 / span 4;
@@ -24,7 +22,7 @@
 .content-callout .grid {
   grid-gap: 8rem;
   .grid-item {
-    
+
     grid-column: 1 / span 3;
   }
 

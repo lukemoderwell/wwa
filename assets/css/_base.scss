@@ -57,14 +57,14 @@ img {
 
   svg {
     position: absolute;
-    width: 6rem;
+    width: 20%;
     top: 35%;
-    left: -3rem;
+    left: -10%;
     z-index: 2;
   }
 
   img {
-    filter: saturate(45%);
+    filter: saturate(45%) grayscale(20%);
     transition: 250ms all ease-out;
     z-index: 0;
     &:hover {
