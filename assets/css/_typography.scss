@@ -19,6 +19,7 @@ h1, .f1 {
   font-size: 4.236rem;
   @media (min-width: $lg) {
     font-size: 6.854rem; // 109.664px 
+    line-height: 1;
   }
 }
 

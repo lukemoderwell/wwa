@@ -1,15 +1,13 @@
 .btn {
   display: inline-block;
   position: relative;
-  padding: 1.25rem 3.75rem;
-  background-color: $tomato;
-  color: $white;
-  font-weight: 600;
+  padding: 1rem 2rem;
+  background-color: $salmon;
+  color: $black;
   text-decoration: none;
-  text-transform: uppercase;
   transition: 350ms all ease-in-out;
 }
 
 .btn:hover {
-  background-color: darken($tomato, 5);
+  background-color: lighten($salmon, 5);
 }
