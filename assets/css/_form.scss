@@ -1,0 +1,43 @@
+fieldset {
+  display: flex;
+  margin: 1rem 0;
+  padding: 0;
+  border: 0;
+
+  label,
+  .label {
+    margin: 0;
+    padding-bottom: .0;
+  }
+
+  input[type="text"],
+  input[type="date"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    font-size: 1rem;
+    padding: .5rem 0;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid $gray;
+    background: transparent;
+
+    &:focus {
+      border-color: $black;
+    }
+  }
+
+  select,
+  input[type="checkbox"] {
+    margin-top: .875rem;
+  }
+
+  input[type="checkbox"] {
+    margin-right: .5rem;
+  }
+
+  input[type="submit"] {
+    display: block;
+    width: 100%;
+  }
+}

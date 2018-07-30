@@ -1,0 +1,71 @@
+---
+layout: default
+title: Contact Anna | Get In Touch
+---
+
+<section class="contact">
+  <div class="grid">
+    <h2 class="grid-item f2 serif flush-bottom">Get In Touch</h2>
+    <p class="grid-item">Thanks for your interest in having your wedding with Anna! Fill out the form below so that we can have a better understanding of your needs:</p>
+  </div>
+  <form class="grid serif">
+    <fieldset>
+      <label>Full Name</label>
+      <input required type="text" />
+    </fieldset>
+    <fieldset>
+      <label>Email</label>
+      <input type="email" />
+    </fieldset>
+    <fieldset>
+      <label>Date</label>
+      <input type="date" />
+    </fieldset>
+    <fieldset>
+      <label for="length">How long will your event be?</label>
+      <input name="length" type="text"/>
+    </fieldset>
+    <fieldset>
+      <label>Number of Guests</label>
+      <select>
+        <option value="0-50">0-50</option>
+        <option value="51-100">51-100</option>
+        <option value="101-150">101-150</option>
+        <option value="151-200">151-200</option>
+        <option value="200+">200+</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <p class="label" name="event-type">I am interested in music for:</p>
+      <label><input type="checkbox" value="ceremony">The ceremony</label>
+      <label><input type="checkbox" value="wedding">The wedding</label>
+      <label><input type="checkbox" value="reception">The reception</label>
+      <label><input type="checkbox" value="other">Something else</label>
+    </fieldset>
+    <fieldset>
+      <label name="venue">Is your venue confirmed?</label>
+      <select>
+        <option disabled>Choose an answer</option>
+        <option for="venue" value="yes">Yes, we've booked one.</option>
+        <option for="venue" value="no">No, we are still looking.</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <label name="location">Event Location</label>
+      <input for="location" type="text" />
+    </fieldset>
+    <fieldset>
+      <label name="sites">I will need services at two seperate sites</label>
+      <select>
+        <option disabled>Choose an answer</option>
+        <option for="sites" value="yes">Yes</option>
+        <option for="sites" value="no">No</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <label for="length">Any additional details that would be helpful to know?</label>
+      <textarea maxlength="500"></textarea>
+    </fieldset>
+    <input type="submit" value="Send Request" />
+  </form>
+</section>
