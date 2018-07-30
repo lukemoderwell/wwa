@@ -1,0 +1,11 @@
+.media {
+  display: flex;
+  margin-bottom: 2rem;
+
+  .media-img {
+    margin-right: 1rem;
+    flex-basis: 6.25rem;
+    min-width: 6.25rem;
+    height: 6.25rem;
+  }
+}

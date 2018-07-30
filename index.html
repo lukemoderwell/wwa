@@ -3,56 +3,63 @@ layout: default
 title: Weddings With Anna
 ---
 
-  <section class="content-welcome">
-    <div class="grid">
-      <div class="grid-item text-center">
-        <h1 class="serif f1 flush-bottom"><span class="text-salmon">Music</span> makes memories</h1>
-        <h2 class="f5">
-          Anna crafts a personalized music experience for each couple's wedding that brings people together.
-          With a tasteful repitoire of live and DJ'ed songs, your wedding is sure to have something for everyone.
-        </h2>
-        <div class="cta-group">
-          <a href="#listen" class="btn">Listen to samples</a>
-          <a href="/booking" class="btn">Book Now</a>
-        </div>
+<section class="content-welcome">
+  <div class="grid">
+    <div class="grid-item text-center">
+      <h1 class="serif f1 flush-bottom"><span class="text-salmon">Music</span> makes memories</h1>
+      <h2 class="f5">
+        Anna crafts a personalized music experience for each couple's wedding that brings people together.
+        With a tasteful repitoire of live and DJ'ed songs, your wedding is sure to have something for everyone.
+      </h2>
+      <div class="cta-group">
+        <a href="#listen" class="btn">Listen to samples</a>
+        <a href="/contact" class="btn">Book Now</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="content-callout" id="callout">
-    <div class="grid">
-      <div class="grid-item">
-        <div class="portrait">
-          <svg viewbox="0 0 120 264">
-            <use href="/assets/svg/outline.svg#outline"></use>
-          </svg>
-          <img src="/images/anna-sepia.jpg" />
-        </div>
-      </div>
-      <div class="grid-item d-flex align-items-center">
-        <div>
-          <h3 class="f2 serif blockquote">
-            I love working with you throughout the planning process to make sure your wedding is <span class="text-salmon">unique</span> to you!
-          </h3>
-          <a class="btn" href="/meet-anna">Meet Anna</a>
-        </div>
+<section class="content-callout" id="callout">
+  <div class="grid">
+    <div class="grid-item">
+      <div class="portrait">
+        <svg viewbox="0 0 120 264">
+          <use href="/assets/svg/outline.svg#outline"></use>
+        </svg>
+        <img src="/images/anna-sepia.jpg" />
       </div>
     </div>
-  </section>
-  
-  <!-- <section class="content-services">
-    <div class="grid">
+    <div class="grid-item d-flex align-items-center">
+      <div>
+        <h3 class="f2 serif blockquote">
+          I love working with you throughout the planning process to make sure your wedding is <span class="text-salmon">unique</span> to you!
+        </h3>
+        <a class="btn" href="/meet-anna">Meet Anna</a>
+      </div>
     </div>
-  </section> -->
+  </div>
+</section>
 
-  <section class="content-listen" id="listen">
-    <h2 class="serif f3">Listen To Samples</h2>
+<!-- <section class="content-services">
+  <div class="grid">
+  </div>
+</section> -->
+
+<section class="content-listen" id="listen">
+  <h2 class="serif f3">Listen To Samples</h2>
+  <div class="grid">
     {% for sample in site.audio %}
-    <div class="sample">
-      <img src="https://placehold.it/100x100" />
-      <h5>{{ sample.name }}</h5>
-      <audio src="{{ sample.src }}" preload />
+    <div class="media">
+      <div class="media-src">
+        <img class="media-img" data-audio-trigger src="https://placehold.it/100x100" />
+        <audio src="{{ sample.src }}" preload data-audio-src />
+      </div>
+      <div class="media-body">
+        <h5 class="serif f4 flush" >{{ sample.name }}</h5>
+        <p class="flush-top">{{ sample.description }}</p>
+      </div>
     </div>
     {% endfor %}
-  </section>
+  </div>
+</section>
 
