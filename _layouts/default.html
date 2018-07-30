@@ -23,17 +23,32 @@
     <meta property="og:site_name" content="{{ site.title }}">
     <link rel="stylesheet" href="/assets/css/main.css">
   </head>
-  <body class="theme-dark">
+  <body>
     <div class="app">
       <div class="app-background"></div>
       <div class="app-background-image" style="background-image: url('/images/welcome-bg.jpg'); opacity: 0;"></div>
-      {% include _header.html %}
       <div class="app-content">
+        {% include _header.html %}
         <main class="content">
           {{ content }}
         </main>
       </div>
     </div>
+
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function() {
+        const audioTriggers = document.querySelectorAll('[data-audio-trigger]');
+
+        function toggleAudio(src) {
+          !src.paused ? src.pause() : src.play();
+        }
+        for (var i = 0; i < audioTriggers.length; i+= 1) {
+          audioTriggers[i].addEventListener('click', function() {
+            toggleAudio(this.nextElementSibling);
+        });
+      };
+    });
+    </script>
     
     <script type="text/javascript">
       //uncomment and change this to false if you're having trouble with WOFFs

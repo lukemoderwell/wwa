@@ -8,9 +8,13 @@ class WWA {
     }
 
     // DOM
-    this.appBg = undefined;
-    this.appBgImg = undefined;
+    this.appBg;
+    this.appBgImg;
+
+    this.audioTriggers;
   }
+
+
 
   handleScroll() {
     const bg = document.getElementsByClassName('app-background')[0];
@@ -32,6 +36,3 @@ class WWA {
     window.addEventListener('scroll', this.handleScroll);
   }
 }
-
-const w = new WWA;
-w.init();
