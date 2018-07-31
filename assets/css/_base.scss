@@ -41,9 +41,15 @@ body {
   padding-left: 2rem;
   padding-right: 2rem;
 
+  @media (min-width: $xl) {
+    max-width: 90rem;
+  }
+
+
+
   section {
     @media (min-width: $lg) {
-      height: 100vh;
+      height: 80vh;
     }
   }
 }

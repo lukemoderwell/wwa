@@ -9,12 +9,11 @@
 }
 
 .content-welcome .grid {
-  height: 100vh;
   .grid-item {
     grid-column: 1 / span 6;
 
-    @media (min-width: $lg) {
-      grid-column: 2 / span 4;
+    @media (min-width: $md) {
+      grid-column: 1 / span 4;
     }
   }
 }
