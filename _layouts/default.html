@@ -22,11 +22,26 @@
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <meta property="og:site_name" content="{{ site.title }}">
     <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123132749-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-123132749-1');
+    </script>
   </head>
   <body>
     <div class="app">
       <div class="app-background"></div>
       <div class="app-background-image" style="background-image: url('/images/welcome-bg.jpg'); opacity: 0;"></div>
+      {% if page.banner %}
+        <div class="app-banner sticky text-center">
+          <a href="/contact"><h4 class="flush mono f7">Now booking for 2019 weddings! <strong>Get In Touch</strong></h4></a>
+        </div>
+      {% endif %}
       <div class="app-content">
         {% include _header.html %}
         <main class="content">

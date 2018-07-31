@@ -7,6 +7,10 @@ html {
   font-family: 'LydianBTWXX-Roman', Georgia, serif;
 }
 
+.mono {
+  font-family: 'Input Mono', 'Inconsolata', 'Menlo', monospace;
+}
+
 // FONT SCALE
 // designed using the Golden Ratio
 // https://type-scale.com/
@@ -50,6 +54,10 @@ p, .f6 {
 }
 
 .f7 {
+  font-size: .875rem; // 14px
+}
+
+.f8 {
   font-size: .618rem; // 10px
 }
 
