@@ -36,8 +36,18 @@ fieldset {
     margin-right: .5rem;
   }
 
-  input[type="submit"] {
+  button[type="submit"] {
     display: block;
+    padding: 1rem 2rem;
     width: 100%;
+    color: $white;
+    border: none;
+    background: $salmon;
+    transition: 250ms background ease-in-out;
+
+    &:hover {
+      background: darken($salmon, 10%);
+      cursor: pointer;
+    }
   }
 }
