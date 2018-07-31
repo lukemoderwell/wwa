@@ -10,15 +10,15 @@ title: Contact Anna | Get In Touch
   </div>
   <form class="grid serif" action="/" name="contact" method="post" netlify>
     <fieldset>
-      <label>Full Name</label>
+      <label for="fullName">Full Name</label>
       <input name="fullName" required type="text" />
     </fieldset>
     <fieldset>
-      <label>Email</label>
+      <label for="email">Email</label>
       <input name="email" type="email" />
     </fieldset>
     <fieldset>
-      <label>Wedding Date</label>
+      <label for="weddingDate">Wedding Date</label>
       <input name="weddingDate" type="date" />
     </fieldset>
     <fieldset>
@@ -26,8 +26,8 @@ title: Contact Anna | Get In Touch
       <input name="length" type="text"/>
     </fieldset>
     <fieldset>
-      <label>Number of Guests</label>
-      <select name="guests>
+      <label for="guests">Number of Guests</label>
+      <select name="guests">
         <option value="0-50">0-50</option>
         <option value="51-100">51-100</option>
         <option value="101-150">101-150</option>
@@ -36,35 +36,35 @@ title: Contact Anna | Get In Touch
       </select>
     </fieldset>
     <fieldset>
-      <p class="label" name="event-type">I am interested in music for:</p>
-      <label><input type="checkbox" value="ceremony">The ceremony</label>
-      <label><input type="checkbox" value="wedding">The wedding</label>
-      <label><input type="checkbox" value="reception">The reception</label>
-      <label><input type="checkbox" value="other">Something else</label>
+      <p class="label" for="event-type">I am interested in music for:</p>
+      <label><input name="event-type" type="checkbox" value="ceremony">The ceremony</label>
+      <label><input name="event-type" type="checkbox" value="wedding">The wedding</label>
+      <label><input name="event-type" type="checkbox" value="reception">The reception</label>
+      <label><input name="event-type" type="checkbox" value="other">Something else</label>
     </fieldset>
     <fieldset>
-      <label name="venue">Is your venue confirmed?</label>
+      <label for="venue">Is your venue confirmed?</label>
       <select>
         <option disabled>Choose an answer</option>
-        <option for="venue" value="yes">Yes, we've booked one.</option>
-        <option for="venue" value="no">No, we are still looking.</option>
+        <option name="venue" value="yes">Yes, we've booked one.</option>
+        <option name="venue" value="no">No, we are still looking.</option>
       </select>
     </fieldset>
     <fieldset>
-      <label name="location">Event Location</label>
-      <input for="location" type="text" />
+      <label for="location">Event Location</label>
+      <input name="location" type="text" />
     </fieldset>
     <fieldset>
-      <label name="sites">I will need services at two seperate sites</label>
+      <label for="multipleSites">Will the band need to setup in multiple locations?</label>
       <select>
         <option disabled>Choose an answer</option>
-        <option for="sites" value="yes">Yes</option>
-        <option for="sites" value="no">No</option>
+        <option name="multipleSites" value="yes">Yes</option>
+        <option name="multipleSites" value="no">No</option>
       </select>
     </fieldset>
     <fieldset>
-      <label for="length">Any additional details that would be helpful to know?</label>
-      <textarea maxlength="500"></textarea>
+      <label for="additionalDetails">Any additional details that would be helpful to know?</label>
+      <textarea name="additionalDetails" maxlength="500"></textarea>
     </fieldset>
     <input type="submit" value="Send Request" />
   </form>
