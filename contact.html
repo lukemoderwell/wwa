@@ -8,18 +8,18 @@ title: Contact Anna | Get In Touch
     <h2 class="grid-item f2 serif flush-bottom">Get In Touch</h2>
     <p class="grid-item">Thanks for your interest in having your wedding with Anna! Fill out the form below so that we can have a better understanding of your needs:</p>
   </div>
-  <form class="grid serif">
+  <form class="grid serif" action="/" name="contact" method="post" netlify>
     <fieldset>
       <label>Full Name</label>
-      <input required type="text" />
+      <input name="fullName" required type="text" />
     </fieldset>
     <fieldset>
       <label>Email</label>
-      <input type="email" />
+      <input name="email" type="email" />
     </fieldset>
     <fieldset>
-      <label>Date</label>
-      <input type="date" />
+      <label>Wedding Date</label>
+      <input name="weddingDate" type="date" />
     </fieldset>
     <fieldset>
       <label for="length">How long will your event be?</label>
@@ -27,7 +27,7 @@ title: Contact Anna | Get In Touch
     </fieldset>
     <fieldset>
       <label>Number of Guests</label>
-      <select>
+      <select name="guests>
         <option value="0-50">0-50</option>
         <option value="51-100">51-100</option>
         <option value="101-150">101-150</option>
