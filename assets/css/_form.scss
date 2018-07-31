@@ -7,7 +7,7 @@ fieldset {
   label,
   .label {
     margin: 0;
-    padding-bottom: .0;
+    padding-bottom: 0;
   }
 
   input[type="text"],
@@ -23,7 +23,7 @@ fieldset {
     background: transparent;
 
     &:focus {
-      border-color: $black;
+      border-color: tan;
     }
   }
 
@@ -40,13 +40,13 @@ fieldset {
     display: block;
     padding: 1rem 2rem;
     width: 100%;
-    color: $white;
+    font-size: 1rem;
+    background: tan;
     border: none;
-    background: $salmon;
     transition: 250ms background ease-in-out;
 
     &:hover {
-      background: darken($salmon, 10%);
+      background: darken(tan, 10%);
       cursor: pointer;
     }
   }
