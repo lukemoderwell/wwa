@@ -21,7 +21,6 @@
 .content-callout .grid {
   grid-gap: 8rem;
   .grid-item {
-
     grid-column: 1 / span 3;
   }
 
@@ -39,7 +38,7 @@
 
   .grid-item:last-child {
     @media (min-width: $md) {
-      grid-column: 2 / span 4;
+      grid-column: 2 / span 3;
     }
   }
 }

@@ -43,14 +43,14 @@ body {
 
   @media (min-width: $xl) {
     max-width: 90rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
 
 
   section {
-    @media (min-width: $lg) {
-      height: 80vh;
-    }
+    // should this have a set height?
   }
 }
 
