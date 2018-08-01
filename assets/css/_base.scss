@@ -49,8 +49,11 @@ body {
 
 
 
-  section {
+  .content-welcome {
+    display: flex;
+    align-items: center;
     // should this have a set height?
+    height: calc(100vh - 112px);
   }
 }
 

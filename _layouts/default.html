@@ -52,6 +52,7 @@
 
     <script type="text/javascript">
       document.addEventListener("DOMContentLoaded", function() {
+        // audio
         const audioTriggers = document.querySelectorAll('[data-audio-trigger]');
 
         function togglePlayIcon(el) {
@@ -68,6 +69,36 @@
             toggleAudio(this.lastElementChild);
           });
         };
+
+        // scroll events
+        function applyDarkTheme() {
+          document.getElementsByClassName('app-background')[0].style.background = `#1a1a1a`;
+          document.body.classList.add('theme-dark');
+        }
+
+        function removeDarkTheme() {
+          document.getElementsByClassName('app-background')[0].style.background = ``;
+          document.body.classList.remove('theme-dark');
+        }
+
+
+        function isScrolledIntoView(el) {
+          var rect = el.getBoundingClientRect();
+          var elemTop = rect.top;
+          var elemBottom = rect.bottom;
+
+          // Only completely visible elements return true:
+          // var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+          // Partially visible elements return true:
+          isVisible = elemTop < window.innerHeight && elemBottom >= 0;
+          isVisible ? applyDarkTheme() : removeDarkTheme();
+        } 
+
+        window.addEventListener('scroll', function() {
+          console.log(window.scrollY);
+          isScrolledIntoView(document.getElementById('callout'));
+        })
+
       });
     </script>
     
