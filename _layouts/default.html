@@ -54,15 +54,21 @@
       document.addEventListener("DOMContentLoaded", function() {
         const audioTriggers = document.querySelectorAll('[data-audio-trigger]');
 
+        function togglePlayIcon(el) {
+          const playIcon = el.getElementsByClassName('play')[0];
+          !playIcon.classList.contains('pause') ? playIcon.classList.add('pause') : playIcon.classList.remove('pause');
+        }
+
         function toggleAudio(src) {
           !src.paused ? src.pause() : src.play();
+          togglePlayIcon(src.parentElement);
         }
         for (var i = 0; i < audioTriggers.length; i+= 1) {
           audioTriggers[i].addEventListener('click', function() {
-            toggleAudio(this.nextElementSibling);
-        });
-      };
-    });
+            toggleAudio(this.lastElementChild);
+          });
+        };
+      });
     </script>
     
     <script type="text/javascript">

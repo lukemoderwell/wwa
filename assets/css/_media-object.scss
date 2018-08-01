@@ -2,10 +2,55 @@
   display: flex;
   margin-bottom: 2rem;
 
-  .media-img {
+  .media-src {
+    position: relative;
     margin-right: 1rem;
-    flex-basis: 6.25rem;
-    min-width: 6.25rem;
+    width: 6.25rem;
     height: 6.25rem;
+    
+    .media-overlay {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0,0,0,.1);
+      transition: 250ms background-color ease;
+
+      &:hover {
+        cursor: pointer;
+        background-color: rgba(0,0,0,.2);
+      }
+
+      .play {
+        box-sizing: border-box;
+        height: 32px;
+        
+        border-color: transparent transparent transparent $salmon;
+        transition: 100ms all ease;
+        will-change: border-width;
+        cursor: pointer;
+      
+        // play state
+        border-style: solid;
+        border-width: 16px 0 16px 32px;
+      
+        // paused state
+        &.pause {
+          border-color: transparent transparent transparent $white;
+          border-style: double;
+          border-width: 0px 0 0px 32px;
+        }
+      }
+    }
+
+    .media-img {
+      min-width: 6.25rem;
+      height: 6.25rem;
+      object-fit: cover;
+    }
   }
 }
