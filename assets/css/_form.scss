@@ -1,5 +1,4 @@
 fieldset {
-  display: flex;
   margin: 1rem 0;
   padding: 0;
   border: 0;
@@ -41,6 +40,7 @@ fieldset {
     padding: 1rem 2rem;
     width: 100%;
     font-size: 1rem;
+    background-color: transparent;
     border: 1px solid $navy;
     transition: 250ms background ease-in-out;
 
