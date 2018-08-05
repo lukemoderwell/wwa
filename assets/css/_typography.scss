@@ -30,12 +30,8 @@ h1, .f1 {
 h2, .f2 {
   font-size: 2.75rem;
   @media (min-width: $md) {
-    font-size: 3.375rem;
+    font-size: 3.375rem; // 54px
     line-height: 4rem;
-  }
-  @media (min-width: $lg) {
-    font-size: 4rem; // 67.776px
-    line-height: 4.5rem;
   }
 }
 
@@ -92,4 +88,12 @@ p, .f6 {
 
 .text-accent {
   color: $rose;
+}
+
+.welcome-text {
+  font-size: 2rem;
+  @media (min-width: $md) {
+    font-size: 3rem;
+    line-height: 1.25;
+  }
 }
