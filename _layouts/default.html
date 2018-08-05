@@ -32,6 +32,8 @@
 
       gtag('config', 'UA-123132749-1');
     </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,400i" rel="stylesheet">
   </head>
   <body>
     <div class="app">
@@ -48,6 +50,14 @@
           {{ content }}
         </main>
       </div>
+    </div>
+    
+    <div class="footer">
+     <div class="grid">
+       <div class="grid-item text-center">
+         <h5 class="f6 serif">Weddings With Anna — Copyright {{ "now" | date: "%Y" }} </h5>
+       </div>
+     </div>
     </div>
 
     <script type="text/javascript">
@@ -96,7 +106,7 @@
 
         window.addEventListener('scroll', function() {
           console.log(window.scrollY);
-          isScrolledIntoView(document.getElementById('callout'));
+          // isScrolledIntoView(document.getElementsByClassName('content-services')[0]);
         })
 
       });

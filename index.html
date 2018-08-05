@@ -3,64 +3,78 @@ layout: default
 title: Personalized Wedding Music | Weddings With Anna
 banner: true
 ---
-<section class="content-welcome">
-  <div class="grid">
-    <div class="grid-item">
-      <h1 class="serif f2 push-bottom">
-        <span class="text-accent">Anna</span> creates a personalized music experience for each couple's wedding that 
-        <span class="text-accent">brings people together</span> and <span class="text-accent">makes memories.</span></h1>
-      <div class="cta-group">
-        <a href="#listen" class="btn mono">Listen to samples</a>
+  
+  <section class="content-welcome">
+    <div class="grid">
+      <div class="grid-item text-center">
+        <h1 class="serif f2 push-bottom ">
+          <span class="text-accent">Anna</span> creates a personalized music experience for each couple's wedding that 
+          <span class="text-accent">brings people together</span> and <span class="text-accent">makes memories.</span>
+        </h1>
         <a href="/contact" class="btn mono">Book Now</a>
       </div>
     </div>
-  </div>
+  </section>
+
+<!-- End App Content to get full bleed -->
+</div>
+
+<section class="content-full-bleed" id="full-bleed">
+  <div class="portrait"></div>
 </section>
 
-<section class="content-callout" id="callout">
-  <div class="grid">
-    <div class="grid-item">
-      <div class="portrait">
-        <svg viewbox="0 0 120 264">
-          <use href="/assets/svg/outline.svg#outline"></use>
-        </svg>
-        <img src="/images/anna-sepia.jpg" />
+<div class="app-content">
+  <section class="content-services">
+    <div class="grid grid-2up">
+      <div class="grid-item">
+        <h3 class="f3 serif flush">Wedding Services</h3>
+      </div>
+      <div class="grid-item">
+        <h4 class="serif flush-bottom">Ceremony</h4> 
+        <p>
+          We provide music as your guests are being seated and will continue to play for the processional, special requests, and recessional.
+          As a trio we are the perfect size to create an intimate atmosphere for your ceremony.
+        </p>
+        
+        <h4 class="serif flush-bottom">Cocktails</h4>
+        <p>
+            As your guests start to mingle with hors d'oeuvres and drinks we will provide the music to set the tone for the rest of the evening.
+            The music will be soft, yet engaging for your guests and let them know you have thought about every detail!
+        </p>
+          
+        <h4 class="serif flush-bottom">Reception</h4>
+        <p>
+          If you have seen us before you know we love to pull out the tambourine and get people on the dance floor!  As your reception band I will emcee the entire evening and work with your other vendors to make sure the night runs smoothly.  While we will play our “live” set as much as you want, we understand there are some songs that just don’t fit our group…. 
+          *cough* <em>The Electric Slide</em> *cough* And here is where the customization comes in...  
+          I can provide you with a combination of live music and “DJ” services so there is something for everyone!
+        </p>
+          
+        <h4 class="serif flush-bottom">Looking for something else?</h4> 
+        <p>
+          I really do want your wedding to be what YOU want. Let me know how I can help you create the vibe and soundtrack you’ve always wanted!
+        </p>
       </div>
     </div>
-    <div class="grid-item d-flex align-items-center">
-      <div>
-        <h3 class="f2 serif blockquote">
-          I love working with you throughout the planning process to make sure your wedding is <span class="text-salmon">unique</span> to you!
-        </h3>
-        <a class="btn mono" href="/meet-anna">Meet Anna</a>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- <section class="content-services">
-  <div class="grid">
-  </div>
-</section> -->
-
-<section class="content-listen" id="listen">
-  <h2 class="serif f3">Listen To Samples</h2>
-  <div class="grid">
-    {% for sample in site.audio %}
-    <div class="media">
-      <div class="media-src" data-audio-trigger>
-        <div class="media-overlay">
-          <div class="play"></div>
+  <!-- <section class="content-listen" id="listen">
+    <h2 class="serif f3">Listen To Samples</h2>
+    <div class="grid">
+      {% for sample in site.audio %}
+      <div class="media">
+        <div class="media-src" data-audio-trigger>
+          <div class="media-overlay">
+            <div class="play"></div>
+          </div>
+          <img class="media-img" src="{{ sample.img }}" />
+          <audio src="{{ sample.src }}" preload data-audio-src />
         </div>
-        <img class="media-img" src="{{ sample.img }}" />
-        <audio src="{{ sample.src }}" preload data-audio-src />
+        <div class="media-body">
+          <h5 class="serif f4 flush" >{{ sample.name }}</h5>
+          <p class="flush-top">{{ sample.description }}</p>
+        </div>
       </div>
-      <div class="media-body">
-        <h5 class="serif f4 flush" >{{ sample.name }}</h5>
-        <p class="flush-top">{{ sample.description }}</p>
-      </div>
+      {% endfor %}
     </div>
-    {% endfor %}
-  </div>
-</section>
+  </section> -->
 
