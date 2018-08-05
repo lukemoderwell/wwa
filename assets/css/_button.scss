@@ -2,12 +2,13 @@
   display: inline-block;
   position: relative;
   padding: 1rem 2rem;
-  background-color: $salmon;
-  color: $black;
+  color: $navy;
+  border: 1px solid $navy;
   text-decoration: none;
   transition: 350ms all ease-in-out;
 }
 
 .btn:hover {
-  background-color: lighten($salmon, 5);
+  color: $white;
+  background-color: $rose;
 }

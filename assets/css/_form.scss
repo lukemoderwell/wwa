@@ -19,11 +19,11 @@ fieldset {
     padding: .5rem 0;
     outline: none;
     border: 0;
-    border-bottom: 1px solid $gray;
+    border-bottom: 1px solid $slate;
     background: transparent;
 
     &:focus {
-      border-color: tan;
+      border-color: $rose;
     }
   }
 
@@ -41,12 +41,12 @@ fieldset {
     padding: 1rem 2rem;
     width: 100%;
     font-size: 1rem;
-    background: tan;
-    border: none;
+    border: 1px solid $navy;
     transition: 250ms background ease-in-out;
 
     &:hover {
-      background: darken(tan, 10%);
+      color: $white;
+      background-color: $rose;
       cursor: pointer;
     }
   }
