@@ -1,6 +1,6 @@
 .grid {
   display: grid;
-  grid-column-gap: 3rem;
+  grid-column-gap: 2rem;
   grid-template-columns: repeat(6, 1fr);
 
   .grid-item {
@@ -8,42 +8,38 @@
   }
 }
 
-.content-welcome .grid {
-  .grid-item {
+.content-welcome {
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+
+  @media (min-width: $md) {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  .grid .grid-item {
     grid-column: 1 / span 6;
 
-    @media (min-width: $md) {
-      grid-column: 1 / span 4;
+    @media (min-width: $lg) {
+      grid-column: 2 / span 4;
     }
   }
 }
 
-.content-callout .grid {
-  grid-gap: 8rem;
-  .grid-item {
-    grid-column: 1 / span 3;
-  }
-
-  .grid-item:last-child {
-    grid-column: 4 / span 3;
-  }
-}
-
-.content-meet .grid {
+.grid-2up {
   .grid-item {
     @media (min-width: $md) {
-      grid-column: 1 / span 1;  
+      grid-column: 1 / span 3;  
     }
   }
 
   .grid-item:last-child {
     @media (min-width: $md) {
-      grid-column: 2 / span 3;
+      grid-column: 4 / span 3;
     }
   }
 }
 
-.content-faqs .grid {
+.grid-3up {
   .grid-item {
     grid-column: span 6;
 
