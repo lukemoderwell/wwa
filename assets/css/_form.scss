@@ -36,18 +36,7 @@ fieldset {
   }
 
   button[type="submit"] {
-    display: block;
-    padding: 1rem 2rem;
-    width: 100%;
-    font-size: 1rem;
-    background-color: transparent;
-    border: 1px solid $navy;
-    transition: 250ms background ease-in-out;
-
-    &:hover {
-      color: $white;
-      background-color: $rose;
-      cursor: pointer;
-    }
+   width: 100%;
+   border: 0  
   }
 }
