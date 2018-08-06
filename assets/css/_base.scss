@@ -60,16 +60,26 @@ img {
   height: auto;
 }
 
-.portrait {
+.bg-img {
   position: relative;
   width: 100%;
   height: 0;
-  padding-top: 56.25%;
-  background-image: url('assets/images/anna-1x.jpg');
   background-size: cover;
+}
+
+.portrait {
+  padding-top: 56.25%;
+  background-image: url('../images/anna-1x.jpg');
 
   @media (min-width: $md) {
-    background-image: url('assets/images/anna-2x.jpg');
+    background-image: url('../images/anna-2x.jpg');
   }
 }
 
+.full-bleed {
+  margin: 2rem 0;
+
+  @media (min-width: $lg) {
+    margin: 4rem 0;
+  }
+}
