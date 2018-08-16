@@ -1,8 +1,9 @@
 title: Weddings With Anna
 email: info@weddingswithanna.com
-description: DJ and live band for the best wedding experience in Cincinnati.
+description: DJ and live band for the best wedding experience in Cincinnati and Northern Kentucky.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://weddingswithanna.com" # the base hostname & protocol for your site, e.g. http://example.com
+image: "https://weddingswithanna.com/assets/images/anna-2x.jpg"
 github_username:  lukemoderwell
 
 # Build settings
