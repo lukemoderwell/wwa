@@ -1,8 +1,8 @@
 title: Weddings With Anna
-email: luke.moderwell@gmail.com
+email: info@weddingswithanna.com
 description: DJ and live band for the best wedding experience in Cincinnati.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://weddingswithanna.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://weddingswithanna.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  lukemoderwell
 
 # Build settings
