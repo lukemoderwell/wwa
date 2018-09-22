@@ -12,15 +12,15 @@ title: Contact | Weddings With Anna
   <form id="contact-form" class="grid serif" action="/thanks" name="contact" method="POST" netlify>
     <fieldset>
       <label for="fullName">Full Name*</label>
-      <input id="name" name="fullName" required type="text">
+      <input id="name" name="fullName" required type="text" required aria-required="true">
     </fieldset>
     <fieldset>
       <label for="email">Email*</label>
-      <input id="email" name="email" type="email">
+      <input id="email" name="email" type="email" required aria-required="true">
     </fieldset>
     <fieldset>
       <label for="weddingDate">Wedding Date*</label>
-      <input id="date" name="weddingDate" type="date">
+      <input id="date" name="weddingDate" type="date" required aria-required="true">
     </fieldset>
     <fieldset>
       <p class="label">I am interested in music for:</p>
@@ -70,18 +70,3 @@ title: Contact | Weddings With Anna
     </fieldset>
   </form>
 </section>
-
-<script>
-  function onSubmit(token) {
-    const name = document.getElementById('name');
-    const email = document.getElementById('email');
-    const date = document.getElementById('date');
-    if (email.value !== "" || name.value !== "" || date.value !== "") {
-      document.getElementById("contact-form").submit();
-    } else {
-      name.classList.add('required');
-      email.classList.add('required');
-      date.classList.add('required');
-    }
-  }
-</script>
