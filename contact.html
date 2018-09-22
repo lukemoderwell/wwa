@@ -6,20 +6,21 @@ title: Contact | Weddings With Anna
 <section class="contact">
   <div class="grid">
     <h2 class="grid-item f2 serif flush-bottom">Get In Touch</h2>
-    <p class="grid-item">Thanks for your interest in having your wedding with Anna! Fill out the form below so that we can have a better understanding of your needs:</p>
+    <p class="grid-item">Thanks for your interest in having your wedding with Anna! Fill out the form below so that we
+      can have a better understanding of your needs. * indicates required fields.</p>
   </div>
-  <form class="grid serif" action="/thanks" name="contact" method="post" netlify>
+  <form id="contact-form" class="grid serif" action="/thanks" name="contact" method="POST" netlify>
     <fieldset>
-      <label for="fullName">Full Name</label>
-      <input name="fullName" required type="text" />
+      <label for="fullName">Full Name*</label>
+      <input id="name" name="fullName" required type="text" required>
     </fieldset>
     <fieldset>
-      <label for="email">Email</label>
-      <input name="email" type="email" />
+      <label for="email">Email*</label>
+      <input id="email" name="email" type="email" required>
     </fieldset>
     <fieldset>
-      <label for="weddingDate">Wedding Date</label>
-      <input name="weddingDate" type="date" />
+      <label for="weddingDate">Wedding Date*</label>
+      <input name="weddingDate" type="date" required>
     </fieldset>
     <fieldset>
       <p class="label">I am interested in music for:</p>
@@ -30,11 +31,11 @@ title: Contact | Weddings With Anna
     </fieldset>
     <fieldset>
       <label for="length">How long will your event be?</label>
-      <input name="length" type="text"/>
+      <input name="length" type="text">
     </fieldset>
     <fieldset>
       <label for="location">Event Location</label>
-      <input name="location" type="text" />
+      <input name="location" type="text">
     </fieldset>
     <fieldset>
       <label for="guests">Number of Guests</label>
@@ -58,6 +59,24 @@ title: Contact | Weddings With Anna
       <label for="additionalDetails">Any additional details that would be helpful to know?</label>
       <textarea name="additionalDetails" maxlength="500"></textarea>
     </fieldset>
-    <fieldset><button class="c-button" type="submit"><a>Send Request</a></button></div></fieldset>
+    <fieldset>
+      <button 
+        class="g-recaptcha c-button" 
+        type="submit" 
+        data-sitekey="6LdrnnEUAAAAAD3yG375MhYwki7NKzADpqfqA9_f"
+        data-callback='onSubmit'>
+        <a>Submit</a>
+      </button>
+    </fieldset>
   </form>
 </section>
+
+<script>
+  function onSubmit(token) {
+    const email = document.getElementById('email');
+    const name = document.getElementById('name');
+    if (email.value !== "" && name.value !== "") {
+      document.getElementById("contact-form").submit();
+    }
+  }
+</script>
