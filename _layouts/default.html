@@ -24,7 +24,8 @@
     <meta property="og:image" content="{% if page.image %}https:{{ page.image | escape }}{% else %}{{ site.image | escape }}{% endif %}">
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <meta property="og:site_name" content="{{ site.title }}">
-    <link rel="stylesheet" href="/assets/css/main.css">
+    
+    {% asset main.scss !integrity %}
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123132749-1"></script>
@@ -68,13 +69,12 @@
     </div>
     
     <script type="text/javascript">
-      //uncomment and change this to false if you're having trouble with WOFFs
-      //var woffEnabled = true;
-      //to place your webfonts in a custom directory 
-      //uncomment this and set it to where your webfonts are.
-      //var customPath = "/themes/fonts";
-      </script>
-      <script type="text/javascript" src="/assets/js/typo.js"></script>
-    <script type="text/javascript" async src="/assets/js/index.js"></script>
+    //uncomment and change this to false if you're having trouble with WOFFs
+    //var woffEnabled = true;
+    //to place your webfonts in a custom directory 
+    //uncomment this and set it to where your webfonts are.
+    //var customPath = "/themes/fonts";
+    </script>
+    <script type="text/javascript" src="/assets/js/typo.js"></script>
   </body>
 </html>
