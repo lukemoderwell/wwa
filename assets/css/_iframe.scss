@@ -1,0 +1,18 @@
+.c-r-iframe-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 100%;
+
+  @media (min-width: $md) {
+    padding-top: 56.25%;
+  }
+
+  .c-r-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+}
