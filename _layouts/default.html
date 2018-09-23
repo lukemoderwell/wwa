@@ -26,7 +26,6 @@
     <meta property="og:site_name" content="{{ site.title }}">
     
     {% asset main.scss !integrity %}
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123132749-1"></script>
     <script>
@@ -36,8 +35,6 @@
 
       gtag('config', 'UA-123132749-1');
     </script>
-
-    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,400i" rel="stylesheet">
   </head>
   <body>
     <div class="app">
@@ -55,14 +52,8 @@
         </main>
       </div>
     </div>
-    
-    <div class="footer">
-     <div class="grid">
-       <div class="grid-item text-center">
-         <h5 class="f6 serif">Weddings With Anna — Copyright {{ "now" | date: "%Y" }} </h5>
-       </div>
-     </div>
-    </div>
+
+    {% include _footer.html %}
     
     <script type="text/javascript">
     //uncomment and change this to false if you're having trouble with WOFFs

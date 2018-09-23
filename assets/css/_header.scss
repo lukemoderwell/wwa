@@ -13,29 +13,9 @@
     }
   }
 
-  .header-logo {
-    display: block;
-
-    a {
-      color: $navy;
-      text-decoration: none;
-    }
-  }
-
   .header-nav {
     @media (min-width: $md) {
       margin-left: auto; 
-    }
-    .nav {
-      display: flex;
-      a {
-        margin: 0 1rem;
-        color: $navy;
-        text-decoration: none;
-        @media (min-width: $md) {
-          margin-left: 1.5rem;
-        }
-      }
     }
   }
 }
