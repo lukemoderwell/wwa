@@ -9,7 +9,7 @@ title: Contact | Weddings With Anna
     <p class="grid-item">Thanks for your interest in having your wedding with Anna! Fill out the form below so that we
       can have a better understanding of your needs. * indicates required fields.</p>
   </div>
-  <form id="contact-form" class="grid serif" action="/thanks" name="contact" method="POST" netlify>
+  <form id="contact-form" class="grid serif" action="/thanks" name="contact" method="post" netlify>
     <fieldset>
       <label for="fullName">Full Name*</label>
       <input id="name" name="fullName" required type="text" required aria-required="true">
@@ -59,12 +59,11 @@ title: Contact | Weddings With Anna
       <label for="additionalDetails">Any additional details that would be helpful to know?</label>
       <textarea name="additionalDetails" maxlength="500"></textarea>
     </fieldset>
+    <div class="g-recaptcha" data-sitekey="6LdrnnEUAAAAAD3yG375MhYwki7NKzADpqfqA9_f"></div>
     <fieldset>
       <button 
-        class="g-recaptcha c-button" 
-        type="submit" 
-        data-sitekey="6LdrnnEUAAAAAD3yG375MhYwki7NKzADpqfqA9_f"
-        data-callback='onSubmit'>
+        class="c-button" 
+        type="submit">
         <a>Submit</a>
       </button>
     </fieldset>
